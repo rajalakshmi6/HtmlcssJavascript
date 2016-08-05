@@ -4,17 +4,82 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width,inital-scale=1.0"/>
         <title>
-            My portfolio 
+            My portfolio - css html 
         </title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.slides.min.js"></script>
+		<script type="text/javascript">
+		$(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+		        navigation: false
 
+        /*navigation: {
+          effect: "fade"
+        },
+        pagination: {
+          effect: "fade"
+        },
+        effect: {
+          fade: {
+            speed: 400
+          }
+        } */
+      });
+    });
 
-        
+		</script>
+		<style>
+		#slides{
+		display:none;
+		}
+		#slides .slidesjs-previous{
+		}
+		#slides .slidesjs-next{
+		}
+		.slidesjs-pagination
+		{
+			list-style: none;
+			float: right;
+			      margin: 6px 0 0;
+
+		}
+		.slidesjs-pagination li{
+			float: left;
+			margin : 0 1px;
+		}
+		</style>
+
 
     </head>
     <body>
+		<header>
+		<h1> HTML5 CSS3</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Aboutus</a></li>
+				<li><a href="#">Contactus</a></li>
+			</ul>
+	    </nav>
+		<section class="container">
+			<article id="slider_content1"></article>
+			<article id="slider_content2"></article>
+			<article id="slider_content3"></article>
+				<div id="slides">
+				<img src ="img/slider_image_1.jpg" alt="slider one text">
+				<img src ="img/slider_image_2.jpg">
+				<img src ="img/slider_image_3.jpg">
+				<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 
+				</div>
+		</section>
+		</header>
     </body>  
 </html>
