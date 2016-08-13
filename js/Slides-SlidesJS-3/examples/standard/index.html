@@ -86,6 +86,58 @@
     .navbar {
       overflow: hidden
     }
+    #social{
+  float: left;
+  margin: 22px 0 0 10px;
+  margin-left: 35px !important;
+}
+ 
+#social li {
+  float: left;
+  border-bottom: none !important;
+  list-style-type: none !important;
+}
+ 
+#social li a{
+  float: left;
+  height: 23px;
+  width: 23px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url('images/social-icons.png');
+}
+ 
+#social #tw{
+  background-position: 0 0;
+}
+ 
+#social #tw:hover{
+  background-position: 0 -23px;
+}
+ 
+#social #fb{
+  background-position: -23px 0;
+}
+ 
+#social #fb:hover{
+  background-position: -23px -23px;
+}
+ 
+#social #rss{
+  background-position: -46px 0;
+}
+ 
+#social #rss:hover{
+  background-position: -46px -23px;
+}
+ 
+#social #plus{
+  background-position: -69px 0;
+}
+ 
+#social #plus:hover{
+  background-position: -69px -69px;
+}
   </style>
   <!-- End SlidesJS Optional-->
 
@@ -147,6 +199,17 @@
       <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
     </div>
   </div>
+<footer>
+  <ul id="social">
+    <li><a href="http://twitter.com/Crunchify" id="tw" rel="me" target="_blank">Twitter</a></li>
+ 
+     <li><a href="http://www.facebook.com/Crunchify" id="fb" rel="me" target="_blank">Facebook</a></li>
+ 
+     <li><a href="https://www.google.com/+CrunchifyDotCom" id="plus" rel="me author" target="_blank">Google+</a></li>
+ 
+    <li><a href="http://feeds.feedburner.com/Crunchify" id="rss" rel="me" target="_blank">RSS</a></li>
+    </ul>
+</footer>
   <!-- End SlidesJS Required: Start Slides -->
 
   <!-- SlidesJS Required: Link to jQuery -->
